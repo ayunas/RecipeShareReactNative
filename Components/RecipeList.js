@@ -9,7 +9,7 @@ const RecipeList = () => {
 
     return (
         <ScrollView >
-            <View style={{alignItems: 'center'}}>
+            <View style={{flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center'}}>
             {samples.map( (recipe,i) => <Recipe key={i} recipe={recipe} />)}
             </View>
         </ScrollView>
